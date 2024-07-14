@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+            font-family: Rubik;
+        }
+
+        @font-face {
+            font-family: Rubik;
+            src: url(Rubik.ttf);
+        }
+
+        .head {
+            background-color: #fff;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 150px;
+        }
+
+        .head-content h1 {
+            padding: 15px;
+            margin: 0;
+        }
+
+        .head-content img {
+            border-radius: 25px;
+            width: 80%;
+            height: 80%;
+        }
+
+        .head-content {
+            text-align: center;
+        }
+
+        .projects {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 250px;
+            text-align: center;
+        }
+
+        .project:nth-child(odd) {
+            align-self: flex-end;
+            margin-right: 5%;
+        }
+
+        .project:nth-child(even) {
+            align-self: flex-start;
+            margin-left: 5%;
+        }
+
+        .project {
+            box-shadow: 5px 6px 8px 1px rgba(0, 0, 0, 0.54);
+            width: 35%;
+            min-height: 250px;
+            border-radius: 15px;
+            border: solid #ededed 1px;
+            user-select: none;
+            transition: transform 0.25s ease;
+        }
+
+        .project img {
+            width: 100%;
+            border-radius: 15px 15px 0px 0px;
+        }
+
+        .project-meta {
+            padding: 15px;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <div class="head-content">
+            <img src="img/skinmc-avatar.png">
+            <h1>Maxttc</h1>
+        </div>
+    </div>
+    <div class="projects">
+        <div class="project" onclick="window.location.href = 'https://cookbook.maxttc.me' ">
+            <img src="img/cookbook.png">
+            <div class="project-meta">
+                <h2>Cookbook</h2>
+                <p>A little plattform to share and search for recipes.</p>
+            </div>
+        </div>
+        <br><br>
+        <p>More projects comming soon...</p>
+    </div>
+</body>
+
+</html>
